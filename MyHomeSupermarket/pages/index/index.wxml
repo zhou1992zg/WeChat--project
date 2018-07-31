@@ -1,0 +1,39 @@
+<view class="over_box">
+  <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" class="slide-size" indicator-color="#ccc" indicator-active-color="#990000">
+    <block wx:for="{{imgUrls}}" wx:key="img">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="button_box">
+      <button type="warn" size="mini" plain="true" bindtap="bindViewTap">节日聚会</button>
+    <button type="warn" size="mini" plain="true" bindtap="bindView">拜访送礼</button>
+    <button type="warn" size="mini" bindtap="default" hover-class="other-button-hover">十分速达</button>
+  </view>
+  <view class="title">小区超市-全部分类</view>
+  <view class="classify_box">
+  <view wx:for="{{imgClassifyUrls}}" wx:for-index="index" wx:for-item="item" wx:key="imgClassifyUrls" class="classify_right">
+  <navigator url='../lanmu/index?classifyName={{classifyName[index]}}'>
+    <view class="classify">
+      <image src="{{imgClassifyUrls[index]}}"/>
+      <view wx:if="{{classifyName[index]=='tiaowei'}}">粮食调味</view>
+      <view wx:if="{{classifyName[index]=='lingshi'}}">休闲零食</view>
+      <view wx:if="{{classifyName[index]=='qingli'}}">厨房清理</view>
+      <view wx:if="{{classifyName[index]=='naifeng'}}">母婴奶粉</view>
+      <view wx:if="{{classifyName[index]=='meizhuang'}}">美容美妆</view>
+      <view wx:if="{{classifyName[index]=='neiyi'}}">内衣鞋袜</view>
+      <view wx:if="{{classifyName[index]=='mingcha'}}">茗茶</view>
+      <view wx:if="{{classifyName[index]=='chufang'}}">厨房用具</view>
+      <view wx:if="{{classifyName[index]=='shuiguo'}}">新鲜水果</view>
+      <view wx:if="{{classifyName[index]=='shucai'}}">绿色蔬菜</view>
+    </view>
+    </navigator>
+    </view>
+  </view>
+  <view class="gouwuche_box">
+    <image class="gouwuche" src='../../images/gouwuche.png'/>
+    <view class="gouwuche_text">购买历史</view>
+  </view>
+</view>

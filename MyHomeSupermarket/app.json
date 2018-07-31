@@ -1,0 +1,15 @@
+{
+  "pages":[
+    "pages/login/login",
+    "pages/logs/logs",
+    "pages/partyAndbaif/party",
+    "pages/index/index",
+    "pages/lanmu/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小区超市",
+    "navigationBarTextStyle":"black"
+  }
+}

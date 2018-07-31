@@ -1,0 +1,135 @@
+/* pages/lanmu/index.wxss */
+.tiaoxuan_img{
+  display: block;
+  height: 400rpx;
+  width: 100%;
+  /* opacity: .3; */
+  z-index: -1;
+}
+.goumai{
+  height: 120rpx;
+  width: 100%;
+  background: #990000;
+  position: fixed;
+  bottom: 0;
+  border-radius: 20rpx 20rpx 0 0;
+  z-index: 9999;
+}
+.goumai_tibu{
+  height: 100rpx;
+  width: 100%;
+  border-radius: 20rpx 20rpx 0 0;
+  z-index: 9999;
+}
+.jiage_box{
+  float: left;
+}
+.button_fukuan{
+  border-radius: 25rpx;
+  padding: 10rpx 40rpx;
+  font-size: 32rpx;
+  color: #fff;
+  float: right;
+  background: #999;
+  margin-top: 30rpx;
+  margin-right: 25rpx;
+}
+.shuliang{
+  font-size: 22rpx;
+  margin-left: 25rpx;
+  color: #fff;
+}
+.jiage{
+  font-size: 38rpx;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 25rpx;
+}
+.title{
+  font-size: 28rpx;
+  color: #999;
+  margin-left: 20rpx;
+  margin-top: 38rpx;
+}
+.shangping_box{
+  padding: 0 25rpx;
+}
+.shangping_one{
+  width: 100%;
+  height: 150rpx;
+}
+.shangping_img{
+  width: 120rpx;
+  height: 120rpx;
+  margin: 15rpx 0;
+  float: left;
+  display: block;
+  margin-right: 30rpx;
+}
+.shangpingName{
+  font-size: 38rpx;
+  margin-top: 20rpx;
+  float: left;
+}
+.shangpingMoney{
+  font-size: 42rpx;
+  margin-top: 15rpx;
+}
+.add1{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  border: 2px solid #aaa;
+  font-size: 38rpx;
+  text-align: center;
+  line-height: 45rpx;
+  color: #aaa;
+  float: right;
+  margin-right: 20rpx;
+  margin-top: 70rpx;
+}
+.add2{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  border: 2px solid #990000;
+  font-size: 38rpx;
+  text-align: center;
+  line-height: 45rpx;
+  background: #990000;
+  color: #fff;
+  float: right;
+  margin-right: 20rpx;
+  margin-top: 70rpx;
+}
+.display{
+  display: none;
+}
+.app{
+  width: 50rpx;
+  height: 50rpx;
+  border-bottom: 2px solid #990000;
+  font-size: 38rpx;
+  text-align: center;
+  line-height: 45rpx;
+  color: #000;
+  float: right;
+  margin-right: 20rpx;
+  margin-top: 70rpx;
+}
+.meiron_box{
+  float: left;
+}
+.haha_box{
+  float: left;
+}
+.goumai_fukuan{
+  background: red;
+  color:#fff;
+  border-radius: 40rpx;
+  padding: 10rpx 40rpx;
+  font-size: 32rpx;
+  float: right;
+  margin-top: 30rpx;
+  margin-right: 25rpx;
+}

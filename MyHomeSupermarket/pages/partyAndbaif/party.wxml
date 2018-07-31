@@ -1,0 +1,31 @@
+<!--pages/lanmu/index.wxml-->
+<view class="shngping_box">
+  <view class='shangping_box'>
+    <view class="shangping_one" wx:for="{{mdata[classifyName]}}" wx:for-index="index" wx:key="classifyName" wx:for-item="item">
+    <view class="beijingtu">
+      <image src='{{item.imgUrl}}' class="tiaoxuan_img"/>
+    </view>
+      <view class="meiron_box">
+        <image src='{{item.advertising}}' class="shangping_img"/>
+        <view class="haha_box">
+          <view class='shangpingName'>{{item.name}}</view>
+          <view class='shangpingMoney'>¥{{item.selling}}</view>
+        </view>
+      </view>
+      <!--  -->
+      <view class='{{item.buyNum == 0 ? "add1": "add2"}}' catchtap='addtap' data-index='{{index}}'>+</view>
+      <input type='text' class='{{item.buyNum == 0 ? "display": "app"}}' value='{{item.buyNum}}'></input>
+      <view class='{{item.buyNum == 0 ? "display": "add1"}}' catchtap='subtracttap' data-index='{{index}}'>-</view>
+    </view>
+  </view>
+  <!-- 小于7时隐藏 -->
+  <view class="goumai_tibu" class='{{item.length < 7 ? "display": "goumai_tibu"}}'>
+  </view>
+  <view class="goumai">
+    <view class="jiage_box">
+      <text class="shuliang">{{totalCount}}份商品</text>
+      <view class="jiage">¥{{totalPrice}}元</view>
+    </view>
+      <view class='{{totalPrice !== 0 ? "goumai_fukuan": "button_fukuan"}}' wx:requestPayment>购买</view>
+  </view>
+</view>
